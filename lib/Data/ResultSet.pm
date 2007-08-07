@@ -290,6 +290,21 @@ side-effects, is a bad idea.
 =back
  
 Please report any new problems to the author.  Patches are welcome.
+
+=head1 SEE ALSO
+
+There are quite a few other packages on the CPAN for implementing
+polymorphic return values.  You may wish to use one of these instead:
+
+=over 4
+
+=item * L<Class::ReturnValue>
+
+=item * L<Return::Value>
+
+=item * L<Contextual::Return>
+
+=back
  
 =head1 AUTHOR
  
