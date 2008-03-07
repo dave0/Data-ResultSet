@@ -1,16 +1,13 @@
 use strict;
 use warnings;
-use ExtUtils::MakeMaker;
+use inc::Module::Install;
 
-WriteMakefile(
-    NAME                => 'Data::ResultSet',
-    AUTHOR              => q{Dave O'Neill <dmo@roaringpenguin.com>},
-    VERSION_FROM        => 'lib/Data/ResultSet.pm',
-    ABSTRACT_FROM       => 'lib/Data/ResultSet.pm',
-    PL_FILES            => {},
-    PREREQ_PM => {
-        'Test::More' => 0,
-    },
-    dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
-    clean               => { FILES => 'Data-ResultSet-*' },
-);
+name	 'Data-ResultSet';
+all_from 'lib/Data/ResultSet.pm';
+
+build_requires 'Test::More' => 0;
+
+author_tests('xt');  # Uses Module::Install::AuthorTests
+
+auto_install;
+WriteAll;

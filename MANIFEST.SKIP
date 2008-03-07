@@ -1,0 +1,9 @@
+\.git/
+Data-ResultSet-.*
+blib/
+pm_to_blib$
+.*~
+MANIFEST.SKIP$
+MANIFEST.bak$
+Makefile$
+\.gitignore
