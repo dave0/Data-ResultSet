@@ -2,7 +2,7 @@ package Data::ResultSet;
 use warnings;
 use strict;
 
-our $VERSION = '1.000';
+our $VERSION = '1.001';
 
 sub new
 {
