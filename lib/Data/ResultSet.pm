@@ -1,6 +1,7 @@
 package Data::ResultSet;
 use warnings;
 use strict;
+use 5.006;
 
 our $VERSION = '1.001';
 
